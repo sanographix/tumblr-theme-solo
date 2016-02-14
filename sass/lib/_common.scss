@@ -1,0 +1,33 @@
+// Common
+body {
+    font-family: 'Avenir Next','Helvetica Neue','Helvetica','Arial', '游ゴシック', 'YuGothic', 'Yu Gothic','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+    background: $bg;
+    color: $base;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    color: $link;
+    transition: all .2s;
+}
+h1,h2,h3,h4,h5,h6 {
+    a {
+        color: $base;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $link;
+        text-decoration: none;
+    }
+}
+// mixin
+@mixin clearfix() {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}
