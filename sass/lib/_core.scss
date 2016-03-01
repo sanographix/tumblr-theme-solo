@@ -34,7 +34,15 @@
 
 // post
 .post {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    &.is-normal-view:after {
+        content: " ";
+        display: block;
+        width: 1em;
+        height: 1px;
+        margin: 2em auto;
+        border-top: 3px solid $base;
+    }
 }
 
 .entry-title + .entry-title-else {
@@ -43,10 +51,14 @@
 
 .entry-header {
     text-align: center;
+    margin-bottom: 2em;
+    .is-simple-view & {
+        text-align: left;
+    }
 }
 .entry-title,
 .entry-title-else {
-    margin: 0;
+    margin: 0 auto .3em;
     font-size: 2.3em;
     @media #{$mq-sm} {
         font-size: 1.8em;
@@ -104,9 +116,6 @@
         color: $light;
         margin-bottom: 2em;
     }
-    .entry-header {
-        text-align: left;
-    }
 }
 
 /////////// permalink page
@@ -124,12 +133,6 @@
     }
     .post {
         margin-top: 5em;
-    }
-    .entry-header {
-        margin-bottom: 2em;
-    }
-    .entry-title {
-        margin-bottom: .3em;
     }
 }
 
