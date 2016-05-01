@@ -40,7 +40,7 @@
         display: block;
         width: 1em;
         height: 1px;
-        margin: 2em auto;
+        margin: 4em auto;
         border-top: 3px solid $base;
     }
 }
@@ -54,6 +54,10 @@
     margin-bottom: 2em;
     .is-simple-view & {
         text-align: left;
+        margin-bottom: 3em;
+        @media #{$mq-sm} {
+            margin-bottom: 2em;
+        }
     }
 }
 .entry-title,
