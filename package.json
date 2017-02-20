@@ -9,8 +9,8 @@
     "url": "https://github.com/sanographix/rin"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-pleeease": "~1.2.0",
-    "gulp-sass": "~1.3.3"
+    "gulp": "^3.9.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-sass": "^2.3.2"
   }
 }
