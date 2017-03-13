@@ -411,6 +411,24 @@
                   <div class="answer cont">{Answer}</div>
                 </div>
               {/block:Answer}
+
+              <!-- entry footer -->
+              <footer class="entry-footer">
+                <div class="entry-meta-footer">
+                  <div class="meta meta-footer">
+                    <span class="meta-elements timeago">
+                      <a href="{Permalink}">{ShortMonth} {DayOfMonthWithZero}, {Year}</a>
+                    </span>
+                    {block:NoteCount}
+                      &nbsp;&nbsp;·&nbsp;&nbsp;
+                      <span class="meta-elements notecount">
+                        <a href="{Permalink}">{NoteCount} Notes</a>
+                      </span>
+                    {/block:NoteCount}
+                  </div>
+                </div>
+              </footer>
+
             {/block:IndexPage}
           {/block:IfNotSimpleView}
 
